@@ -10,4 +10,4 @@ mqttc.connect(_g_cst_ToMQTTTopicServerIP, _g_cst_ToMQTTTopicServerPort)
 
 while 1 :
     name = raw_input('Enter input:')
-    mqttc.publish(_g_cst_MQTTTopicName, name)   
+    mqttc.publish(_g_cst_MQTTTopicName, name)  
