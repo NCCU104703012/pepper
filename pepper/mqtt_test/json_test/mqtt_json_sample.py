@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import json
 # Define Variables
-MQTT_HOST = "140.119.163.193"
+MQTT_HOST = "192.168.0.188"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC = "irisPayload"

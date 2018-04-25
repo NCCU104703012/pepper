@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 
 _g_cst_ToMQTTTopicServerIP = "localhost"
 _g_cst_ToMQTTTopicServerPort = 1883 #port
-_g_cst_MQTTTopicName = "TOPIC01" #TOPIC name
+_g_cst_MQTTTopicName = "testcase" #TOPIC name
 
 mqttc = mqtt.Client("python_pub")
 mqttc.connect(_g_cst_ToMQTTTopicServerIP, _g_cst_ToMQTTTopicServerPort)
