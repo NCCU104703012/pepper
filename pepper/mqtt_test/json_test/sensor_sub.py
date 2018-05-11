@@ -14,11 +14,24 @@ def on_message(client, userdata, msg):
     #print(msg.topic)
     #print(msg.payload) # <- do you mean this payload = {...} ?
     payload = json.loads(msg.payload) # you can use json.loads to convert string to json
+    RShoulderPitch = payload['RShoulderPitch']
+    RShoulderRoll = payload['RShoulderRoll']
+    LShoulderPitch = payload['LShoulderPitch']
+    LShoulderRoll = payload['LShoulderRoll']
+    RElbowYaw = payload['RElbowYaw']
+    RElbowRoll = payload['RElbowRoll']
+    LElbowYaw = payload['LElbowYaw']
+    LElbowRoll = payload['LElbowRoll']
+
     #print(payload['check']) # then you can check the value
     #if payload['check']=="one":
     #    print(payload['token1'])
     #    client.disconnect()
-    print(json.dumps(payload, indent=4))
+    #print(json.dumps(payload, indent=4))
+    print(RShoulderPitch,RShoulderRoll)
+    print(LShoulderPitch,LShoulderRoll)
+    print(RElbowYaw,RElbowRoll)
+    print(LElbowYaw,LElbowRoll)
     #client.disconnect() # Got message then disconnect
 
 # Initiate MQTT Client

@@ -8,8 +8,7 @@ MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC = "sensor/test"
 
-MQTT_MSG=json.dumps({"check": "one","token1":  "get token1","petalLength": "4.5","petalWidth":  "1.5"});
-MQTT_MSG2=json.dumps({"check": "two","token2":  "get token2","petalLength": "4.5","petalWidth":  "1.5"});
+
 
 output = {}
 RShoulderPitch = "RShoulderPitch"
@@ -57,5 +56,3 @@ while 1 :
     name = raw_input('Enter input:')
     if name=="1" :
         mqttc.publish(MQTT_TOPIC, output)
-    if name=="2" :
-        mqttc.publish(MQTT_TOPIC, MQTT_MSG2)
